@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-spacing: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FDF2E9;
+}
+
+.sudoku-solver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 50%; */
+}
+
+.intro {
+    color: #1B4F72;
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin: 10px 0px 10px 0px;
+}
+
+.instruction-1, .instruction-2, .instruction-3, .description {
+    font-size: 18px;
+    color: #1B4F72;
+    letter-spacing: 0.5px;
+}
+
+.instruction-3 {
+    margin: 0px 0px 15px 0px;
+}
+
+.description {
+    margin: 0px 0px 15px 0px;
+}
+
+.decorator-elem {
+    font-weight: bold;
+}
+
+.puzzle {
+    width: 405px;
+    height: 405px;
+}
+
+
+.odd-section {
+    background: #d3d3d3;
+}
+
+.puzzle input {
+    text-align: center;
+    font-size: 30px;
+    width: 45px;
+    height: 45px;
+    border: 1px #808080 solid;
+}
+
+.empty-el {
+    color: #4848d4;
+}
+
+.solve-button, .clear-button, .load-button {
+    margin-top: 20px;
+    background-color: #1B4F72;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.clear-button, .load-button {
+    margin-left: 15px;
+}
+
+.solve-button:hover, .clear-button:hover, .load-button:hover {
+    background-color: black;
+}
+
+@media (max-width: 468px){
+    .instruction-1, .instruction-2, .instruction-3, .description {
+        font-size: 17px;
+    }
+    .solve-button, .clear-button, .load-button {
+        padding: 8px 8px;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+    .clear-button, .load-button {
+        margin-left: 8px;
+    }
+    .puzzle {
+        font-size: 25px;
+        width: 315px;
+        height: 315px;
+
+    }
+    .puzzle input {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (min-width: 469px) and (max-width: 768px){
+    .instruction-1, .instruction-2, .instruction-3, .description {
+        font-size: 17px;
+    }
+    .solve-button, .clear-button, .load-button {
+        padding: 8px 8px;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+    .clear-button, .load-button {
+        margin-left: 8px;
+    }
+    .puzzle {
+        font-size: 25px;
+        width: 360px;
+        height: 360px;
+
+    }
+    .puzzle input {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024){
+    .instruction-1, .instruction-2, .instruction-3, .description {
+        font-size: 17px;
+    }
+}
